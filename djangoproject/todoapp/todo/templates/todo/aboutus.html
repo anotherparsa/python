@@ -4,5 +4,19 @@
     </head>
     <body>
         <h1>This is the Aboutus page</h1>
+        <h1>Here are our clients</h1>
+        {% for client in clientlist %}
+            <h1>name:</h1> 
+            <br>
+            {{client.name}}
+            <h1>family:</h1> 
+            <br>
+            {{client.family}}
+            <h1>age:</h1> 
+            <br>
+            {{client.age}}
+            <br>
+            <br>
+        {%endfor%}
     </body>
 </html>
