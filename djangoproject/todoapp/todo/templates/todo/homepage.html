@@ -4,6 +4,11 @@
     </head>
     <body>
         <h1>This is the home page</h1>
-        <h1>the passed data is {{datakey}}</h1>
+        <h1>the passed data is {{ datakey }}</h1>
+        {% if datakey == 'datavalue' %}
+            <h1>condition has been meet</h1>
+        {% else %}
+            <h1>access denied</h1>
+        {% endif %}
     </body>
 </html>
